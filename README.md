@@ -10,9 +10,9 @@
 > Analisar de forma crítica a interação entre o humano de a inteligência artificial sob o viés da IHC. 
 ##### Objetivos Específicos:
 
--[] Traçar um breve perfil histórico da influência tecnológica nas relações humanas.
--[]Listar os casos mais incidentes da Inteligência artificial no contexto da socialização humana. 
--[] Analisar de forma crítica os efeitos (positivos ou negativos) da inteligência de máquina na interação com o humano via IHC. 
+-[ ] Traçar um breve perfil histórico da influência tecnológica nas relações humanas.
+-[ ] Listar os casos mais incidentes da Inteligência artificial no contexto da socialização humana. 
+-[ ] Analisar de forma crítica os efeitos (positivos ou negativos) da inteligência de máquina na interação com o humano via IHC. 
 
 
 
