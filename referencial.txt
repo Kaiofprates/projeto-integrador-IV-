@@ -1,0 +1,22 @@
+Referencial Teórico: 
+
+IHC - Interação Homem-Computador.
+
+Também interpretada como Interface Homem Computador, o termo IHC está intimamente ligado à evolução do conceito de interface ao longo dos anos pela industria computacional. O termo interface no contexto de sua criação era empregado de forma mais ampla significando as interações entre departamentos, organizações e campos de estudo (CAMPOS, 2012), contudo a IHC tem o enfoque na comunicação entre usuários e computadores. 
+Conforme (CARROL, 1991) a chave principal para a IHC é entender e facilitar a criação de interfaces de usuários.
+Dessa forma, pode-se inferir que a IHC se encontra no limiar entre as ciências da computação e informação e as ciências comportamentais tendo como foco a interação usuário X sistemas. 
+
+
+Interface. 
+
+Campos define: interface é o ponto de interação entre um computadore e outra entidade (...) a interação acontece através da interface. Os elementos de uma interface se associam a uma linguagem de entrada de dados, uma saída de dados e um protocolo de interação. 
+Conforme (MORAN, 1981) apu (DE SOUZA et al, 1999) é através da interface que os usuários têm acesso às funções da aplicação. 
+
+Interação.
+
+Defíne-se como o processo de comunicação entre pessoas e sistemas interativos.
+
+
+Inteligência Artificial. 
+
+Podemos definir inteligência artificial  como uma área de pesquinsa da Ciência da Computação, que busca métodos ou dispositivos computacionais que possam simular a capacidade racional humana para resolver problemas, tomar decisou ou de forma ampla, ser inteligente (JONCO, 2015 et al) aput ( PONTES, 2011).  
