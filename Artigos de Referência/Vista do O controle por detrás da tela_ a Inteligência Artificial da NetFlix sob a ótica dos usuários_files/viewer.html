@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<!-- saved from url=(0173)https://sol.sbc.org.br/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fsol.sbc.org.br%2Findex.php%2Fihc_estendido%2Farticle%2Fdownload%2F8390%2F8293%2F -->
+<html dir="ltr" mozdisallowselectionprint="" moznomarginboxes=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PDF.js viewer</title>
+
+
+    <link rel="stylesheet" href="./viewer.css">
+
+    <script src="./compatibility.js"></script>
+
+
+
+<!-- This snippet is used in production (included from viewer.html) -->
+<link rel="resource" type="application/l10n" href="https://sol.sbc.org.br/plugins/generic/pdfJsViewer/pdf.js/web/locale/locale.properties">
+<script src="./l10n.js"></script>
+<script src="./pdf.js"></script>
+
+
+
+    <script src="./debugger.js"></script>
+    <script src="./viewer.js"></script>
+
+  </head>
+
+  <body tabindex="1" class="">
+    <div id="outerContainer">
+
+      <div id="sidebarContainer">
+        <div id="toolbarSidebar">
+          <div class="splitToolbarButton toggled">
+            <button id="viewThumbnail" class="toolbarButton group toggled" title="Exibir miniaturas das páginas" tabindex="2" data-l10n-id="thumbs">
+               <span data-l10n-id="thumbs_label">Miniaturas</span>
+            </button>
+            <button id="viewOutline" class="toolbarButton group" title="Exibir estrutura de tópicos" tabindex="3" data-l10n-id="outline">
+               <span data-l10n-id="outline_label">Estrutura de tópicos do documento</span>
+            </button>
+            <button id="viewAttachments" class="toolbarButton group" title="Exibir anexos" tabindex="4" data-l10n-id="attachments" disabled="">
+               <span data-l10n-id="attachments_label">Anexos</span>
+            </button>
+          </div>
+        </div>
+        <div id="sidebarContent">
+          <div id="thumbnailView">
+          <a href="https://sol.sbc.org.br/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fsol.sbc.org.br%2Findex.php%2Fihc_estendido%2Farticle%2Fdownload%2F8390%2F8293%2F#page=1" title="Página 1"><div id="thumbnailContainer1" class="thumbnail selected"><div class="thumbnailSelectionRing" style="width: 100px; height: 128px;"></div></div></a><a href="https://sol.sbc.org.br/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fsol.sbc.org.br%2Findex.php%2Fihc_estendido%2Farticle%2Fdownload%2F8390%2F8293%2F#page=2" title="Página 2"><div id="thumbnailContainer2" class="thumbnail"><div class="thumbnailSelectionRing" style="width: 100px; height: 128px;"></div></div></a></div>
+          <div id="outlineView" class="hidden">
+          <div class="outlineItem"><a href="https://sol.sbc.org.br/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fsol.sbc.org.br%2Findex.php%2Fihc_estendido%2Farticle%2Fdownload%2F8390%2F8293%2F#section*.1">Abstract</a></div><div class="outlineItem"><a href="https://sol.sbc.org.br/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fsol.sbc.org.br%2Findex.php%2Fihc_estendido%2Farticle%2Fdownload%2F8390%2F8293%2F#section.1">1 Introdução</a></div><div class="outlineItem"><a href="https://sol.sbc.org.br/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fsol.sbc.org.br%2Findex.php%2Fihc_estendido%2Farticle%2Fdownload%2F8390%2F8293%2F#section.2">2 Metodologia</a></div><div class="outlineItem"><a href="https://sol.sbc.org.br/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fsol.sbc.org.br%2Findex.php%2Fihc_estendido%2Farticle%2Fdownload%2F8390%2F8293%2F#section.3">3 Discussões</a></div><div class="outlineItem"><a href="https://sol.sbc.org.br/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fsol.sbc.org.br%2Findex.php%2Fihc_estendido%2Farticle%2Fdownload%2F8390%2F8293%2F#section.4">4 Resultados</a></div><div class="outlineItem"><a href="https://sol.sbc.org.br/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fsol.sbc.org.br%2Findex.php%2Fihc_estendido%2Farticle%2Fdownload%2F8390%2F8293%2F#section*.5">Referências</a></div></div>
+          <div id="attachmentsView" class="hidden">
+          </div>
+        </div>
+      </div>  <!-- sidebarContainer -->
+
+      <div id="mainContainer">
+        <div class="findbar hidden doorHanger hiddenSmallView" id="findbar">
+          <label for="findInput" class="toolbarLabel" data-l10n-id="find_label">Localizar:</label>
+          <input id="findInput" class="toolbarField" tabindex="91">
+          <div class="splitToolbarButton">
+            <button class="toolbarButton findPrevious" title="Localizar a ocorrência anterior do texto" id="findPrevious" tabindex="92" data-l10n-id="find_previous">
+              <span data-l10n-id="find_previous_label">Anterior</span>
+            </button>
+            <div class="splitToolbarButtonSeparator"></div>
+            <button class="toolbarButton findNext" title="Localizar a próxima ocorrência do texto" id="findNext" tabindex="93" data-l10n-id="find_next">
+              <span data-l10n-id="find_next_label">Próxima</span>
+            </button>
+          </div>
+          <input type="checkbox" id="findHighlightAll" class="toolbarField" tabindex="94">
+          <label for="findHighlightAll" class="toolbarLabel" data-l10n-id="find_highlight">Realçar tudo</label>
+          <input type="checkbox" id="findMatchCase" class="toolbarField" tabindex="95">
+          <label for="findMatchCase" class="toolbarLabel" data-l10n-id="find_match_case_label">Diferenciar maiúsculas/minúsculas</label>
+          <span id="findResultsCount" class="toolbarLabel hidden"></span>
+          <span id="findMsg" class="toolbarLabel"></span>
+        </div>  <!-- findbar -->
+
+        <div id="secondaryToolbar" class="secondaryToolbar hidden doorHangerRight">
+          <div id="secondaryToolbarButtonContainer" style="max-height: 491px;">
+            <button id="secondaryPresentationMode" class="secondaryToolbarButton presentationMode visibleLargeView" title="Alternar para modo de apresentação" tabindex="51" data-l10n-id="presentation_mode">
+              <span data-l10n-id="presentation_mode_label">Modo de apresentação</span>
+            </button>
+
+            <button id="secondaryOpenFile" class="secondaryToolbarButton openFile visibleLargeView" title="Abrir arquivo" tabindex="52" data-l10n-id="open_file">
+              <span data-l10n-id="open_file_label">Abrir</span>
+            </button>
+
+            <button id="secondaryPrint" class="secondaryToolbarButton print visibleMediumView" title="Imprimir" tabindex="53" data-l10n-id="print">
+              <span data-l10n-id="print_label">Imprimir</span>
+            </button>
+
+            <button id="secondaryDownload" class="secondaryToolbarButton download visibleMediumView" title="Download" tabindex="54" data-l10n-id="download">
+              <span data-l10n-id="download_label">Download</span>
+            </button>
+
+            <a href="https://sol.sbc.org.br/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fsol.sbc.org.br%2Findex.php%2Fihc_estendido%2Farticle%2Fdownload%2F8390%2F8293%2F#page=2&amp;zoom=auto,-100,343" id="secondaryViewBookmark" class="secondaryToolbarButton bookmark visibleSmallView" title="Visualização atual (copie ou abra em uma nova janela)" tabindex="55" data-l10n-id="bookmark">
+              <span data-l10n-id="bookmark_label">Visualização atual</span>
+            </a>
+
+            <div class="horizontalToolbarSeparator visibleLargeView"></div>
+
+            <button id="firstPage" class="secondaryToolbarButton firstPage" title="Ir para a primeira página" tabindex="56" data-l10n-id="first_page">
+              <span data-l10n-id="first_page_label">Ir para a primeira página</span>
+            </button>
+            <button id="lastPage" class="secondaryToolbarButton lastPage" title="Ir para a última página" tabindex="57" data-l10n-id="last_page" disabled="">
+              <span data-l10n-id="last_page_label">Ir para a última página</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator"></div>
+
+            <button id="pageRotateCw" class="secondaryToolbarButton rotateCw" title="Girar no sentido horário" tabindex="58" data-l10n-id="page_rotate_cw">
+              <span data-l10n-id="page_rotate_cw_label">Girar no sentido horário</span>
+            </button>
+            <button id="pageRotateCcw" class="secondaryToolbarButton rotateCcw" title="Girar no sentido anti-horário" tabindex="59" data-l10n-id="page_rotate_ccw">
+              <span data-l10n-id="page_rotate_ccw_label">Girar no sentido anti-horário</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator"></div>
+
+            <button id="toggleHandTool" class="secondaryToolbarButton handTool" title="Ativar ferramenta da mão" tabindex="60" data-l10n-id="hand_tool_enable">
+              <span data-l10n-id="hand_tool_enable_label">Ativar ferramenta da mão</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator"></div>
+
+            <button id="documentProperties" class="secondaryToolbarButton documentProperties" title="Propriedades do documento…" tabindex="61" data-l10n-id="document_properties">
+              <span data-l10n-id="document_properties_label">Propriedades do documento…</span>
+            </button>
+          </div>
+        </div>  <!-- secondaryToolbar -->
+
+        <div class="toolbar">
+          <div id="toolbarContainer">
+            <div id="toolbarViewer">
+              <div id="toolbarViewerLeft">
+                <button id="sidebarToggle" class="toolbarButton" title="Exibir/ocultar painel" tabindex="11" data-l10n-id="toggle_sidebar">
+                  <span data-l10n-id="toggle_sidebar_label">Exibir/ocultar painel</span>
+                </button>
+                <div class="toolbarButtonSpacer"></div>
+                <button id="viewFind" class="toolbarButton group hiddenSmallView" title="Localizar no documento" tabindex="12" data-l10n-id="findbar">
+                   <span data-l10n-id="findbar_label">Localizar</span>
+                </button>
+                <div class="splitToolbarButton">
+                  <button class="toolbarButton pageUp" title="Página anterior" id="previous" tabindex="13" data-l10n-id="previous">
+                    <span data-l10n-id="previous_label">Anterior</span>
+                  </button>
+                  <div class="splitToolbarButtonSeparator"></div>
+                  <button class="toolbarButton pageDown" title="Próxima página" id="next" tabindex="14" data-l10n-id="next" disabled="">
+                    <span data-l10n-id="next_label">Próxima</span>
+                  </button>
+                </div>
+                <label id="pageNumberLabel" class="toolbarLabel" for="pageNumber" data-l10n-id="page_label">Página:</label>
+                <input type="number" id="pageNumber" class="toolbarField pageNumber" value="1" size="4" min="1" tabindex="15" max="2">
+                <span id="numPages" class="toolbarLabel">de 2</span>
+              </div>
+              <div id="toolbarViewerRight">
+                <button id="presentationMode" class="toolbarButton presentationMode hiddenLargeView" title="Alternar para modo de apresentação" tabindex="31" data-l10n-id="presentation_mode">
+                  <span data-l10n-id="presentation_mode_label">Modo de apresentação</span>
+                </button>
+
+                <button id="openFile" class="toolbarButton openFile hiddenLargeView" title="Abrir arquivo" tabindex="32" data-l10n-id="open_file">
+                  <span data-l10n-id="open_file_label">Abrir</span>
+                </button>
+
+                <button id="print" class="toolbarButton print hiddenMediumView" title="Imprimir" tabindex="33" data-l10n-id="print">
+                  <span data-l10n-id="print_label">Imprimir</span>
+                </button>
+
+                <button id="download" class="toolbarButton download hiddenMediumView" title="Download" tabindex="34" data-l10n-id="download">
+                  <span data-l10n-id="download_label">Download</span>
+                </button>
+                <a href="https://sol.sbc.org.br/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=https%3A%2F%2Fsol.sbc.org.br%2Findex.php%2Fihc_estendido%2Farticle%2Fdownload%2F8390%2F8293%2F#page=2&amp;zoom=auto,-100,343" id="viewBookmark" class="toolbarButton bookmark hiddenSmallView" title="Visualização atual (copie ou abra em uma nova janela)" tabindex="35" data-l10n-id="bookmark">
+                  <span data-l10n-id="bookmark_label">Visualização atual</span>
+                </a>
+
+                <div class="verticalToolbarSeparator hiddenSmallView"></div>
+
+                <button id="secondaryToolbarToggle" class="toolbarButton" title="Ferramentas" tabindex="36" data-l10n-id="tools">
+                  <span data-l10n-id="tools_label">Ferramentas</span>
+                </button>
+              </div>
+              <div class="outerCenter">
+                <div class="innerCenter" id="toolbarViewerMiddle">
+                  <div class="splitToolbarButton">
+                    <button id="zoomOut" class="toolbarButton zoomOut" title="Diminuir zoom" tabindex="21" data-l10n-id="zoom_out">
+                      <span data-l10n-id="zoom_out_label">Diminuir zoom</span>
+                    </button>
+                    <div class="splitToolbarButtonSeparator"></div>
+                    <button id="zoomIn" class="toolbarButton zoomIn" title="Aumentar zoom" tabindex="22" data-l10n-id="zoom_in">
+                      <span data-l10n-id="zoom_in_label">Aumentar zoom</span>
+                     </button>
+                  </div>
+                  <span id="scaleSelectContainer" class="dropdownToolbarButton" style="min-width: 130px; max-width: 130px;">
+                     <select id="scaleSelect" title="Zoom" tabindex="23" data-l10n-id="zoom" style="min-width: 152px;">
+                      <option id="pageAutoOption" title="" value="auto" selected="selected" data-l10n-id="page_scale_auto">Zoom automático</option>
+                      <option id="pageActualOption" title="" value="page-actual" data-l10n-id="page_scale_actual">Tamanho real</option>
+                      <option id="pageFitOption" title="" value="page-fit" data-l10n-id="page_scale_fit">Ajustar à janela</option>
+                      <option id="pageWidthOption" title="" value="page-width" data-l10n-id="page_scale_width">Largura da página</option>
+                      <option id="customScaleOption" title="" value="custom"></option>
+                      <option title="" value="0.5" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 50 }">50%</option>
+                      <option title="" value="0.75" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 75 }">75%</option>
+                      <option title="" value="1" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 100 }">100%</option>
+                      <option title="" value="1.25" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 125 }">125%</option>
+                      <option title="" value="1.5" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 150 }">150%</option>
+                      <option title="" value="2" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 200 }">200%</option>
+                      <option title="" value="3" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 300 }">300%</option>
+                      <option title="" value="4" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 400 }">400%</option>
+                    </select>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div id="loadingBar" class="hidden" style="width: calc(100% - 15px);">
+              <div class="progress" style="height: 100%; width: 100%;">
+                <div class="glimmer">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <menu type="context" id="viewerContextMenu">
+          <menuitem id="contextFirstPage" label="First Page" data-l10n-id="first_page" title="Ir para a primeira página"></menuitem>
+          <menuitem id="contextLastPage" label="Last Page" data-l10n-id="last_page" title="Ir para a última página"></menuitem>
+          <menuitem id="contextPageRotateCw" label="Rotate Clockwise" data-l10n-id="page_rotate_cw" title="Girar no sentido horário"></menuitem>
+          <menuitem id="contextPageRotateCcw" label="Rotate Counter-Clockwise" data-l10n-id="page_rotate_ccw" title="Girar no sentido anti-horário"></menuitem>
+        </menu>
+
+        <div id="viewerContainer" tabindex="0">
+          <div id="viewer" class="pdfViewer"><div id="pageContainer1" class="page" data-page-number="1" style="width: 1019px; height: 1319px;"><div class="loadingIcon"></div></div><div id="pageContainer2" class="page" data-page-number="2" data-loaded="true" style="width: 1019px; height: 1319px;"><div class="canvasWrapper" style="width: 1019px; height: 1319px;"><canvas id="page2" width="1020" height="1320" style="width: 1020px; height: 1320px;"></canvas></div><div class="textLayer" style="width: 1019px; height: 1319px;"><div data-canvas-width="462.7464989999999" style="left: 467.588px; top: 104.272px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.895347);">Aline Elias Cardoso Verhalen, Cristiano Maciel, Patricia Cristiane de Souza, and Artur Kronbauer</div><div data-canvas-width="383.80944192" style="left: 106.268px; top: 141.138px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.875035);">A avaliação com os usuários foi realizada durante o período de</div><div data-canvas-width="402.0540484799999" style="left: 89.6633px; top: 159.403px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.849968);">setes dias numa mesma conta, também criada para o experimento,</div><div data-canvas-width="402.93118656" style="left: 89.6633px; top: 177.668px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.825519);">com uma pessoa de 14 anos e uma de 50 anos. Os usuários não aces-</div><div data-canvas-width="400.41521472000017" style="left: 89.6633px; top: 195.933px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.87688);">savam a conta simultaneamente, o primeiro acessava no período</div><div data-canvas-width="400.41521472000005" style="left: 89.6633px; top: 214.196px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.8828);">diurno e o segundo no período noturno. Também foi averiguado</div><div data-canvas-width="400.41521471999994" style="left: 89.6633px; top: 232.461px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.892797);">que ambos tinham gostos diferentes para filmes e séries, sendo</div><div data-canvas-width="400.41131433600003" style="left: 89.6633px; top: 250.726px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.856338);">um adepto de aventuras e o outro de comédias românticas. Ao fim</div><div data-canvas-width="400.4152147200001" style="left: 89.6633px; top: 268.991px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.907516);">de cada período de uso, o usuário devia apontar no EmoCard a</div><div data-canvas-width="400.4179046400001" style="left: 89.6633px; top: 287.256px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.858052);">satisfação com a experiência. O usuário noturno não participou do</div><div data-canvas-width="156.568288" style="left: 89.6633px; top: 305.521px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.869484);">primeiro dia de avaliação.</div><div data-canvas-width="383.80047552" style="left: 106.268px; top: 323.786px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.891809);">Os usuários também falavam, enquanto buscavam o que iam</div><div data-canvas-width="400.4152147200001" style="left: 89.6633px; top: 342.051px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.912521);">assistir, o que viam no feed, opinando sobre o que viam. Desta</div><div data-canvas-width="400.4122259200001" style="left: 89.6633px; top: 360.316px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.831272);">forma, foram anotadas estas observações e comparadas depois com</div><div data-canvas-width="400.7672355839999" style="left: 89.6633px; top: 378.581px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.850902);">as observações do usuário seguinte, a fim de averiguar se a NetFlix</div><div data-canvas-width="400.41222592" style="left: 89.6633px; top: 396.844px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.826505);">estaria agradando a ambos, estaria dando preferência para um deles</div><div data-canvas-width="210.87478399999998" style="left: 89.6633px; top: 415.109px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.854244);">ou se ambos estariam insatisfeitos.</div><div data-canvas-width="386.3382656" style="left: 106.268px; top: 433.374px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.841729);">Ao fim da semana, foi montada uma tabela com as reações apon-</div><div data-canvas-width="400.406054048" style="left: 89.6633px; top: 451.639px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.85745);">tadas nos EmoCards, comparando os comentários e emoções. Nos</div><div data-canvas-width="400.4122259199999" style="left: 89.6633px; top: 469.904px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.835339);">três primeiros dias, o usuário diurno apresentou a experiência como</div><div data-canvas-width="400.41222592" style="left: 89.6633px; top: 488.169px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.836486);">"agradável", enquanto o noturno dizia ser "desagradável”, no quarto</div><div data-canvas-width="400.41521471999994" style="left: 89.6633px; top: 506.434px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.909518);">e quinto dia foi colocado como “agradável” para ambos, porém</div><div data-canvas-width="400.41521472" style="left: 89.6633px; top: 524.699px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.879556);">com intensidades diferentes. No sexto e sétimo dia, foi apontado</div><div data-canvas-width="400.41222592" style="left: 89.6633px; top: 542.964px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.841634);">como “desagradável” pelo usuário diurno e “agradável” pelo usuário</div><div data-canvas-width="52.617824000000006" style="left: 89.6633px; top: 561.229px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.857905);">noturno.</div><div data-canvas-width="134.6910213333333" style="left: 89.6633px; top: 604.287px; font-size: 18.1818px; font-family: sans-serif; transform: scaleX(1.05032);">3  DISCUSSÕES</div><div data-canvas-width="402.57477216" style="left: 89.14px; top: 625.156px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.85656);">Ao observar tanto a avaliação do especialista, quanto dos usuários,</div><div data-canvas-width="402.06144576" style="left: 89.6633px; top: 643.421px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.886196);">pode-se notar que a NetFlix, quando acessada por pouco tempo,</div><div data-canvas-width="400.4167390079999" style="left: 89.6633px; top: 661.686px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.865306);">como em um único dia, não realiza mudanças drásticas e notáveis</div><div data-canvas-width="400.4122259199999" style="left: 89.6633px; top: 679.951px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.836773);">no seu sistema de recomendação. Isso ficou perceptível na inspeção</div><div data-canvas-width="402.93118656" style="left: 89.6633px; top: 698.214px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.847221);">pelo especialista, uma vez que a única diferença percebida foi a mo-</div><div data-canvas-width="400.7783539199999" style="left: 89.29px; top: 716.479px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.840872);">vimentação da linha de documentários para um local mais visível ao</div><div data-canvas-width="400.4122259199999" style="left: 89.6633px; top: 734.744px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.844763);">usuário. Já com uma análise por um período maior de tempo, como</div><div data-canvas-width="402.0573660479999" style="left: 89.6633px; top: 753.009px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.869638);">realizado nas avaliações com usuários, as mudanças são notáveis,</div><div data-canvas-width="402.71150976000007" style="left: 89.6633px; top: 771.274px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.833177);">bem como a forma com que isso interfere na experiência do usuário.</div><div data-canvas-width="383.80047552" style="left: 106.268px; top: 789.539px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.910712);">Com relação a UX, foi notada uma variação nos sentimentos</div><div data-canvas-width="400.4122259199999" style="left: 89.6633px; top: 807.804px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.848131);">dos usuários. O voluntário diurno, passou de uma experiência mais</div><div data-canvas-width="400.690273984" style="left: 89.6633px; top: 826.069px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.854233);">agradável para uma desagradável, em diferentes intensidades. Por</div><div data-canvas-width="400.41348121600004" style="left: 89.6633px; top: 844.334px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.861351);">ser mais jovem e com mais experiência computacional, talvez esse</div><div data-canvas-width="403.31136191999997" style="left: 89.29px; top: 862.599px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.887986);">voluntário tivesse expectativas mais altas com o sistema. Já o no-</div><div data-canvas-width="402.05247936" style="left: 89.6633px; top: 880.863px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.829226);">turno, passou de uma experiência desagradável para uma agradável,</div><div data-canvas-width="400.41521472" style="left: 89.6633px; top: 899.128px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.883586);">em diferentes intensidades, o que pode ter sido ocasionado pela</div><div data-canvas-width="214.13257599999997" style="left: 89.6633px; top: 917.393px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.856761);">novidade que o sistema lhe causou.</div><div data-canvas-width="386.328731328" style="left: 106.268px; top: 935.658px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.853683);">No caso do estudo do sistema de recomendação da NetFlix, bus-</div><div data-canvas-width="400.41222591999997" style="left: 89.6633px; top: 953.923px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.825105);">car voluntários com gostos diferentes, e fazê-los acessarem a mesma</div><div data-canvas-width="400.69224659200006" style="left: 89.6633px; top: 972.188px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.864172);">conta tornou mais perceptível a mudança nas recomendações por</div><div data-canvas-width="402.9330695039999" style="left: 89.6633px; top: 990.453px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.844678);">meio dos pôsteres dos filmes. Essa mudança de padrões pode inter-</div><div data-canvas-width="400.4113143360001" style="left: 89.6633px; top: 1008.72px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.861402);">ferir no humor do voluntário, alterando os resultados da avaliação</div><div data-canvas-width="159.60192" style="left: 89.6633px; top: 1026.98px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.861671);">da experiência do usuário.</div><div data-canvas-width="144.78193883333333" style="left: 89.6633px; top: 1070.04px; font-size: 18.1818px; font-family: sans-serif; transform: scaleX(1.10063);">4  RESULTADOS</div><div data-canvas-width="402.5837684479998" style="left: 89.14px; top: 1090.91px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.853892);">Após realizadas as avaliações com o especialista e com os usuários,</div><div data-canvas-width="400.41222591999997" style="left: 89.6633px; top: 1109.17px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.83171);">é perceptível que realizar avaliações com sistemas de recomendação</div><div data-canvas-width="257.440288" style="left: 89.6633px; top: 1127.44px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.860354);">requer cuidados adicionais dos projetistas.</div><div data-canvas-width="383.80047552" style="left: 106.268px; top: 1145.7px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.895103);">A primeira reflexão está na necessidade de um planejamento</div><div data-canvas-width="400.41348121600004" style="left: 89.6633px; top: 1163.97px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.853507);">diferenciado para as avaliações. Como o sistema de recomendação</div><div data-canvas-width="400.406606976" style="left: 529.925px; top: 141.138px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.862667);">e sua IA, em especial neste tipo de sistema, devem ser executados</div><div data-canvas-width="400.41521472000005" style="left: 529.925px; top: 159.403px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.88522);">com um prazo diferenciado, podendo incluir avaliações ao longo</div><div data-canvas-width="400.6895865599999" style="left: 529.925px; top: 177.668px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.896844);">de vários dias, pode-se realizar um piloto do estudo para prever</div><div data-canvas-width="400.4185771199999" style="left: 529.925px; top: 195.933px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.866373);">comportamentos e situações que possam ocorrer no estudo. Esse</div><div data-canvas-width="402.9302899200001" style="left: 529.925px; top: 214.196px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.890839);">piloto ajudaria a construir cenários dos testes. Nesta etapa, tam-</div><div data-canvas-width="400.6904831999999" style="left: 529.925px; top: 232.461px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.856662);">bém devem ser bem selecionados os participantes que possam ter</div><div data-canvas-width="400.404559648" style="left: 529.925px; top: 250.726px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.852701);">disponibilidade diária para as avaliações e que possam observar as</div><div data-canvas-width="400.41222591999997" style="left: 529.925px; top: 268.991px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.827576);">mudanças do sistema ao longo do tempo. Além do desafio de ter um</div><div data-canvas-width="400.40594944000003" style="left: 529.925px; top: 287.256px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.871557);">número mínimo de usuários, esse monitoramento a médio/longo</div><div data-canvas-width="400.68958656" style="left: 529.925px; top: 305.521px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.883231);">prazo altera as condições naturais do ambiente, podendo refletir</div><div data-canvas-width="402.9340109760002" style="left: 529.925px; top: 323.786px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.866356);">nos testes e no humor dos voluntários. Ainda, prever possíveis nu-</div><div data-canvas-width="400.4083404799999" style="left: 529.925px; top: 342.051px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.846275);">ances nos testes em função do uso em um computador ou em uma</div><div data-canvas-width="138.74009599999997" style="left: 529.925px; top: 360.316px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.861525);">televisão é importante.</div><div data-canvas-width="383.8046598399999" style="left: 546.53px; top: 378.581px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.840999);">Considerando essas variáveis e a interferência da IA nas decisões</div><div data-canvas-width="400.41222592" style="left: 529.925px; top: 396.844px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.834558);">do usuário, é importante escolher bem o tipo de testes de inspecção</div><div data-canvas-width="402.941527808" style="left: 529.925px; top: 415.109px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.866288);">e/ou avaliação que serão realizados. Em uma observação em labo-</div><div data-canvas-width="400.41521472" style="left: 529.925px; top: 433.374px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.885571);">ratório, por exemplo, o tempo disposto provavelmente não seria</div><div data-canvas-width="403.31656243199996" style="left: 529.552px; top: 451.639px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.850703);">viável para alguma constatação com relação ao esperado. Nesta ex-</div><div data-canvas-width="400.40908767999997" style="left: 529.925px; top: 469.904px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.848527);">periência, em especial, a combinação de três técnicas diferenciadas</div><div data-canvas-width="327.288544" style="left: 529.925px; top: 488.169px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.86198);">permitiu uma análise mais minusciosa dos resultados.</div><div data-canvas-width="383.80047552" style="left: 546.53px; top: 506.434px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.889926);">Como o planejado reflete no executado, é importante que, na</div><div data-canvas-width="400.4113143360001" style="left: 529.925px; top: 524.699px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.859221);">execução, haja comprometimento dos voluntários com a avaliação</div><div data-canvas-width="402.93028991999995" style="left: 529.925px; top: 542.964px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.888989);">diária, e esforço extra do avaliador para observação. Ainda, é im-</div><div data-canvas-width="400.69257536000003" style="left: 529.925px; top: 561.229px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.865902);">portante que o voluntário se sinta bem no ambiente e possa estar</div><div data-canvas-width="164.264448" style="left: 529.925px; top: 579.494px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.853594);">conectado por mais tempo.</div><div data-canvas-width="383.8046598399999" style="left: 546.53px; top: 597.758px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.822083);">Neste caso, adotou-se a estratégia de usar mais de um usuário em</div><div data-canvas-width="400.69735743999996" style="left: 529.925px; top: 616.023px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.846191);">uma mesma conta, forçando o sistema de recomendação a atender</div><div data-canvas-width="402.93028991999995" style="left: 529.925px; top: 634.288px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.875855);">a gostos e comportamentos diferentes dos voluntários. Essa cola-</div><div data-canvas-width="402.71635161599994" style="left: 529.925px; top: 652.553px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.858471);">boração possui prós e contras, como já comentado nas discussões.</div><div data-canvas-width="400.690273984" style="left: 529.925px; top: 670.818px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.86131);">Cabe a equipe que irá realizar os testes escolher o uso que melhor</div><div data-canvas-width="400.41086601599994" style="left: 529.925px; top: 689.083px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.842848);">atenda aos objetivos do teste. No caso desta avaliação, percebeu-se</div><div data-canvas-width="400.40946127999996" style="left: 529.925px; top: 707.348px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.86359);">que o sistema tentou mesclar os gostos dos voluntários, deixando</div><div data-canvas-width="346.5214720000001" style="left: 529.925px; top: 725.613px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.850282);">ambos os usuários satisfeitos com o que era apresentado.</div><div data-canvas-width="383.80047552" style="left: 546.53px; top: 743.878px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.889957);">Como trabalhos futuros, sugere-se a realização de testes com</div><div data-canvas-width="400.41521472" style="left: 529.925px; top: 762.143px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.89075);">usuários utilzando, em conjunto com outros testes, avaliação de</div><div data-canvas-width="400.4122259199999" style="left: 529.925px; top: 780.406px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.841659);">comunicabilidade e com cenários de uso distintos. Pode-se também</div><div data-canvas-width="400.41521472" style="left: 529.925px; top: 798.671px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.875334);">propor mais recomendações para testes que tenham recursos de</div><div data-canvas-width="400.40908767999997" style="left: 529.925px; top: 816.936px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.883368);">Inteligência Artificial, adaptando e expandindo as atuais técnicas</div><div data-canvas-width="63.795936000000005" style="left: 529.925px; top: 835.201px; font-size: 14.944px; font-family: sans-serif; transform: scaleX(0.849928);">existentes.</div><div data-canvas-width="124.74555849999999" style="left: 529.925px; top: 872.448px; font-size: 18.1818px; font-family: sans-serif; transform: scaleX(1.08107);">REFERÊNCIAS</div><div data-canvas-width="13.680270999999998" style="left: 529.925px; top: 891.657px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.958039);">[1]</div><div data-canvas-width="380.0930911379998" style="left: 550.247px; top: 891.657px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.896384);">Francois Brochet, Suraj Srinivasan, and Michael Norris. 2012. Netflix: Valuing a</div><div data-canvas-width="136.663234" style="left: 550.247px; top: 904.94px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.879286);">New Business Model. (2012).</div><div data-canvas-width="13.680270999999998" style="left: 529.925px; top: 918.224px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.958039);">[2]</div><div data-canvas-width="380.0917428699999" style="left: 550.247px; top: 918.224px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.872121);">Pieter Desmet. 2000. Emotion through expression; designing mobile telephones</div><div data-canvas-width="104.96824283999999" style="left: 549.817px; top: 931.507px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.906166);">with an emotional fit.</div><div data-canvas-width="260.65414355999997" style="left: 659.792px; top: 935.029px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.876901);">Report of Modeling the Evaluation Structure of KANSEI</div><div style="left: 924.823px; top: 931.507px; font-size: 11.623px; font-family: sans-serif;">3</div><div data-canvas-width="75.36353199999999" style="left: 549.898px; top: 944.79px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.852369);">(2000), 103–110.</div><div data-canvas-width="13.680270999999998" style="left: 529.925px; top: 958.074px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.958039);">[3]</div><div data-canvas-width="382.0530660049999" style="left: 550.247px; top: 958.074px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.867356);">Wagner Rodrigues Miranda. [n. d.]. Netflix: Big Data e os algoritmos de recomen-</div><div data-canvas-width="77.44404899999999" style="left: 550.247px; top: 971.357px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.892183);">dação1. ([n. d.]).</div><div data-canvas-width="13.680270999999998" style="left: 529.925px; top: 984.64px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.958039);">[4]</div><div data-canvas-width="256.75369722" style="left: 550.247px; top: 984.64px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.89315);">Jakob Nielsen. 1994. Usability inspection methods. In</div><div data-canvas-width="120.45147359999999" style="left: 809.887px; top: 988.162px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.835381);">Conference companion on</div><div data-canvas-width="170.71862399999998" style="left: 550.247px; top: 1001.45px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.838196);">Human factors in computing systems</div><div data-canvas-width="77.22321199999999" style="left: 720.967px; top: 997.925px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.897201);">. ACM, 413–414.</div><div data-canvas-width="13.680270999999998" style="left: 529.925px; top: 1011.21px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.958039);">[5]</div><div data-canvas-width="380.0860475999999" style="left: 550.247px; top: 1011.21px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.911565);">M SELLITTO. 2002.  Inteligência artificial: uma aplicação em uma indústria de</div><div data-canvas-width="88.92757299999998" style="left: 550.247px; top: 1024.49px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.859615);">processo contínuo.</div><div data-canvas-width="87.137631" style="left: 643.36px; top: 1028.01px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.831029);">Gestão &amp; Produção</div><div data-canvas-width="94.54148199999997" style="left: 733.607px; top: 1024.49px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.85291);">9, 3 (2002), 363–376.</div><div data-canvas-width="13.680270999999998" style="left: 529.925px; top: 1037.78px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.958039);">[6]</div><div data-canvas-width="382.053577417" style="left: 550.247px; top: 1037.78px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.875991);">Daiana Sigiliano and Eduardo Faustino. 2016. NETFLIX: Sistemas de Recomenda-</div><div data-canvas-width="342.06558738" style="left: 550.247px; top: 1051.06px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.867733);">ção Inteligentes http://dx. doi. org/10.15601/1983-7631/rt. v9n16p13-26.</div><div data-canvas-width="33.70507278" style="left: 896.63px; top: 1054.58px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.871075);">Revista</div><div data-canvas-width="23.664427999999997" style="left: 550.247px; top: 1067.86px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.813104);">Tecer</div><div data-canvas-width="55.68579299999999" style="left: 577.655px; top: 1064.34px; font-size: 11.623px; font-family: sans-serif; transform: scaleX(0.847464);">9, 16 (2016).</div><div class="endOfContent active"></div></div></div></div>
+        </div>
+
+        <div id="errorWrapper" hidden="true">
+          <div id="errorMessageLeft">
+            <span id="errorMessage"></span>
+            <button id="errorShowMore" data-l10n-id="error_more_info">Mais informações</button>
+            <button id="errorShowLess" data-l10n-id="error_less_info" hidden="true">Menos informações</button>
+          </div>
+          <div id="errorMessageRight">
+            <button id="errorClose" data-l10n-id="error_close">Fechar</button>
+          </div>
+          <div class="clearBoth"></div>
+          <textarea id="errorMoreInfo" hidden="true" readonly="readonly"></textarea>
+        </div>
+      </div> <!-- mainContainer -->
+
+      <div id="overlayContainer" class="hidden">
+        <div id="passwordOverlay" class="container hidden">
+          <div class="dialog">
+            <div class="row">
+              <p id="passwordText" data-l10n-id="password_label">Forneça a senha para abrir este arquivo PDF.</p>
+            </div>
+            <div class="row">
+              <!-- The type="password" attribute is set via script, to prevent warnings in Firefox for all http:// documents. -->
+              <input id="password" class="toolbarField">
+            </div>
+            <div class="buttonRow">
+              <button id="passwordCancel" class="overlayButton"><span data-l10n-id="password_cancel">Cancelar</span></button>
+              <button id="passwordSubmit" class="overlayButton"><span data-l10n-id="password_ok">OK</span></button>
+            </div>
+          </div>
+        </div>
+        <div id="documentPropertiesOverlay" class="container hidden">
+          <div class="dialog">
+            <div class="row">
+              <span data-l10n-id="document_properties_file_name">Nome do arquivo:</span> <p id="fileNameField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_file_size">Tamanho do arquivo:</span> <p id="fileSizeField">-</p>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+              <span data-l10n-id="document_properties_title">Título:</span> <p id="titleField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_author">Autor:</span> <p id="authorField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_subject">Assunto:</span> <p id="subjectField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_keywords">Palavras-chave:</span> <p id="keywordsField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_creation_date">Data da criação:</span> <p id="creationDateField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_modification_date">Data da modificação:</span> <p id="modificationDateField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_creator">Criação:</span> <p id="creatorField">-</p>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+              <span data-l10n-id="document_properties_producer">Criador do PDF:</span> <p id="producerField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_version">Versão do PDF:</span> <p id="versionField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_page_count">Número de páginas:</span> <p id="pageCountField">-</p>
+            </div>
+            <div class="buttonRow">
+              <button id="documentPropertiesClose" class="overlayButton"><span data-l10n-id="document_properties_close">Fechar</span></button>
+            </div>
+          </div>
+        </div>
+      </div>  <!-- overlayContainer -->
+
+    </div> <!-- outerContainer -->
+    <div id="printContainer"></div>
+<div id="mozPrintCallback-shim" hidden="">
+  <style>
+@media print {
+  #printContainer div {
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+}
+  </style>
+  <style scoped="">
+#mozPrintCallback-shim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999999;
+
+  display: block;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#mozPrintCallback-shim[hidden] {
+  display: none;
+}
+@media print {
+  #mozPrintCallback-shim {
+    display: none;
+  }
+}
+
+#mozPrintCallback-shim .mozPrintCallback-dialog-box {
+  display: inline-block;
+  margin: -50px auto 0;
+  position: relative;
+  top: 45%;
+  left: 0;
+  min-width: 220px;
+  max-width: 400px;
+
+  padding: 9px;
+
+  border: 1px solid hsla(0, 0%, 0%, .5);
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+
+  background-color: #474747;
+
+  color: hsl(0, 0%, 85%);
+  font-size: 16px;
+  line-height: 20px;
+}
+#mozPrintCallback-shim .progress-row {
+  clear: both;
+  padding: 1em 0;
+}
+#mozPrintCallback-shim progress {
+  width: 100%;
+}
+#mozPrintCallback-shim .relative-progress {
+  clear: both;
+  float: right;
+}
+#mozPrintCallback-shim .progress-actions {
+  clear: both;
+}
+  </style>
+  <div class="mozPrintCallback-dialog-box">
+    <!-- TODO: Localise the following strings -->
+    Preparing document for printing...
+    <div class="progress-row">
+      <progress value="0" max="100"></progress>
+      <span class="relative-progress">0%</span>
+    </div>
+    <div class="progress-actions">
+      <input type="button" value="Cancel" class="mozPrintCallback-cancel">
+    </div>
+  </div>
+</div>
+
+  
+
+
+<input id="fileInput" class="fileInput" type="file"></body></html>
